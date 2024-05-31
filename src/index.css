@@ -1,0 +1,298 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background: #26424b;
+  color: white;
+  padding: 1em;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+div {
+  padding: 1em;
+}
+
+.home-container {
+  text-align: center;
+  padding: 2em;
+  background-color: #f4f4f4;
+}
+
+.home-header {
+  background-color: #26424b;
+  color: white;
+  padding: 2em;
+  border-radius: 8px;
+  margin-bottom: 2em;
+}
+
+.home-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.home-header p {
+  font-size: 1.2em;
+  margin: 1em 0 0;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.home-section {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-section h2 {
+  margin-top: 0;
+}
+
+.home-section p {
+  font-size: 1em;
+  margin: 1em 0;
+}
+
+.home-button {
+  background-color: #26424b;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.home-button:hover {
+  background-color: #26424b;
+}
+
+@media (min-width: 768px) {
+  .home-content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .home-section {
+    flex: 1;
+    max-width: 30%;
+  }
+}
+
+.about-container {
+  padding: 2em;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-header {
+  background-color: #26424b;
+  color: white;
+  padding: 1.5em;
+  border-radius: 8px;
+  margin-bottom: 2em;
+}
+
+.about-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.about-section {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  text-align: left;
+}
+
+.about-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1em;
+  border: 3px solid #333;
+}
+
+.about-section h2 {
+  margin-top: 0;
+  font-size: 2em;
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5em;
+}
+
+.about-section p {
+  font-size: 1.1em;
+  margin: 1em 0;
+  line-height: 1.6;
+}
+
+.about-section a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.about-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.social-icon {
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.social-icon.twitter {
+  background: #1DA1F2;
+}
+
+.social-icon.linkedin {
+  background: #0077B5;
+}
+
+.social-icon.github {
+  background: #333;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .about-section {
+    flex: 1;
+    margin: 1em;
+  }
+}
+
+.portfolio-container {
+  padding: 2em;
+  background-color: #f4f4f4;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.portfolio-header {
+  background-color: #26424b;
+  color: white;
+  padding: 1.5em;
+  border-radius: 8px;
+  margin-bottom: 2em;
+}
+
+.portfolio-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.portfolio-header p {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  color: #ddd;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.portfolio-item {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+}
+
+.portfolio-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.portfolio-item h2 {
+  margin-top: 0.5em;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.portfolio-item p {
+  font-size: 1.1em;
+  margin: 1em 0;
+  line-height: 1.6;
+}
+
+.portfolio-link {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: #0073e6;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-link:hover {
+  background-color: #005bb5;
+}
+
+@media (min-width: 768px) {
+  .portfolio-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .portfolio-item {
+    flex: 1;
+    margin: 1em;
+  }
+}
